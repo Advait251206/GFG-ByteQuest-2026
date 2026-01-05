@@ -1,0 +1,25 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        background: "#0a0a0a", // Dark premium background
+        surface: "#1a1a1a",
+        primary: "#10b981", // Emerald 500
+        secondary: "#14b8a6", // Teal 500
+        accent: "#f59e0b", // Amber 500
+        danger: "#ef4444", // Red 500
+        text: "#f3f4f6", // Gray 100
+        muted: "#9ca3af", // Gray 400
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"], // Will need to ensure Inter is imported
+      },
+      animation: {
+        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+    },
+  },
+  plugins: [],
+};
