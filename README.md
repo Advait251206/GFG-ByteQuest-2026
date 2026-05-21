@@ -1,119 +1,135 @@
-# 🏥 Silent Disease - AI-Powered Health Risk Analyzer
+# 🏥 Silent Disease — AI-Powered Health Risk Analyzer
 
-> **"Silent diseases are the most dangerous because they whisper before they roar."**
-
-**Silent Disease** is a modern, AI-driven web application designed to help users identify potential health risks based on their lifestyle metrics and symptoms. By leveraging the power of **Groq's Llama-3 AI**, it provides real-time risk analysis, personalized insights, and an intelligent chat companion to guide users toward better health decisions.
+### *GFG ByteQuest 2026 — Advanced Health Diagnostic Platform*
 
 ---
 
-## ✨ Key Features
-
-### 📊 **Interactive Dashboard**
-
-- Visualize your health trends with **Recharts**.
-- Track key metrics: **Heart Rate, Sleep Quality, Stress Levels, and Blood Pressure**.
-- Real-time **Risk Gauge** showing your probabilistic health risk score.
-
-### 🤖 **AI Risk Analysis**
-
-- Uses **Groq (Llama-3.1-8b)** to analyze your specific health data.
-- Detects patterns and anomalies (e.g., high stress + low sleep).
-- Recognizes conversational symptoms (e.g., "I feel symptoms of Covid") and integrates them into the medical report.
-
-### 💬 **AI Health Companion**
-
-- Persistent Chatbot that remembers your conversation history.
-- Ask questions about symptoms, precautions, and general wellness.
-- **Smart Context**: The AI knows your latest health metrics and risk score.
-
-### 🔐 **Secure & Personalized**
-
-- **JWT Authentication**: Secure Login and Signup.
-- **Profile Management**: Update your details, change passwords, or delete your account properly.
-- **Mobile Responsive**: Fully optimized layout for desktop and mobile devices.
+<div align="center">
+  <img src="https://img.shields.io/badge/Hackathon-GFG_ByteQuest_2026-green?style=for-the-badge&logo=geeksforgeeks" alt="GFG Hackathon Badge" />
+  <img src="https://img.shields.io/badge/AI_Engine-Groq_Llama_3.1-9C27B0?style=for-the-badge" alt="AI Engine Badge" />
+  <img src="https://img.shields.io/badge/Stack-MERN_&_TypeScript-00599C?style=for-the-badge&logo=react" alt="Tech Stack Badge" />
+</div>
 
 ---
 
-## 🛠️ Tech Stack
-
-### **Frontend**
-
-- **Framework**: React (Vite)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS (Glassmorphism UI)
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Charts**: Recharts
-
-### **Backend**
-
-- **Runtime**: Node.js
-- **Framework**: Express.js
-- **Database**: MongoDB (Mongoose)
-- **AI Engine**: Groq SDK (Llama-3.1-8b-instant)
-- **Auth**: JSON Web Tokens (JWT) & Bcrypt
+> 📢 **"Silent diseases are the most dangerous because they whisper before they roar."**
+> 
+> *This submission introduces a comprehensive, AI-integrated prognostic engine designed to flag hidden medical risks and lifestyle imbalances before they escalate into clinical conditions.*
 
 ---
 
-## 🚀 Getting Started
+## 🎯 Platform Objectives
 
-Follow these instructions to set up the project locally.
+**Silent Disease** is an enterprise-grade full-stack solution built specifically for the **GFG ByteQuest 2026** competition. By aligning dynamic health metric tracking with low-latency LLM analysis, the platform empowers everyday users to screen themselves for chronic risks, identify invisible stressors, and receive guided health instructions.
 
-### Prerequisites
+---
 
-- **Node.js** (v16+)
-- **MongoDB** (Local or Atlas URI)
-- **Groq API Key** (Get one for free at [console.groq.com](https://console.groq.com))
+## ⚡ Core Feature Modules
 
-### 1. Clone the Repository
+### 📈 1. Immersive Health Analytics Dashboard
+* **Dynamic Metric Grid:** Tracks vital daily bio-parameters: **Sleep Quality (hours), Stress Levels (1-10), Heart Rate (BPM), and Blood Pressure**.
+* **Data Visualization:** Employs high-fidelity **Recharts** displaying historical trends, fluctuations, and correlations over time.
+* **Intelligent Risk Gauge:** Renders a probabilistic clinical risk score indicating potential health warning levels.
 
+### 🧠 2. Groq-Powered AI Risk Analyzer
+* **Llama-3.1-8b Processing:** Translates unstructured metrics and custom symptom descriptions into structured clinical summaries.
+* **Predictive Anomaly Detection:** Instantly flags overlapping hazards (e.g., matching a high-stress profile with low REM sleep) and synthesizes risk mitigations.
+* **Conversational Symptom Mining:** Intelligently extracts conversational statements (e.g., *"I've been feeling feverish with muscle fatigue"*) and formats them into an organized medical review.
+
+### 💬 3. State-Preserving AI Health Companion
+* **Persistent Session Memory:** An interactive medical chatbot that retains memory of conversational logs across the platform.
+* **Context-Aware Recommendations:** The virtual assistant automatically references the user's latest dashboard metrics and risk scores to provide tailored, localized wellness guidance.
+
+### 🔐 4. Secure Profile Gateways
+* **JWT Infrastructure:** Secure token-based user authentication and data encryption using Bcrypt.
+* **Full Profile Administration:** Custom settings to update biographical information, change authentication passwords, or securely offboard/delete accounts.
+
+---
+
+## 🛠️ Tech Stack Architecture
+
+### **Frontend Interface** ⚛️
+* **Framework:** React 19 (via Vite) + TypeScript
+* **Styling Pipeline:** Tailwind CSS (Modern Glassmorphism UI elements)
+* **Animation Layer:** Framer Motion (Fluid page switches & micro-animations)
+* **Data Visualizations:** Recharts (Dynamic interactive charts)
+* **Icon Pack:** Lucide React
+
+### **Backend Service Engine** ⚙️
+* **Runtime Environment:** Node.js + Express.js APIs
+* **Database Layer:** MongoDB + Mongoose ORM
+* **Inference Pipeline:** Groq SDK (Llama-3.1-8b-instant inference)
+* **Authentication Gateway:** JSON Web Tokens (JWT) & Bcrypt hashing
+
+---
+
+## 🚀 Installation & Local Environment Setup
+
+Run the application locally by executing the following terminal commands:
+
+### **Prerequisites**
+* **Node.js** (v16 or higher)
+* **MongoDB** (A local connection string or MongoDB Atlas URI)
+* **Groq API Key** (Generate a key at [console.groq.com](https://console.groq.com))
+
+---
+
+### **1. Clone the Workspace**
+Clone the GeeksforGeeks ByteQuest workspace and navigate to the project directory:
 ```bash
-git clone https://github.com/yourusername/silent-disease.git
-cd silent-disease
+git clone https://github.com/Advait251206/GFG-ByteQuest-2026.git
+cd GFG-ByteQuest-2026
 ```
 
-### 2. Install Dependencies
-
-Install dependencies for both the root, backend, and frontend.
-
+### **2. Install Dependencies**
+Install standard Node modules across all directories concurrently:
 ```bash
-# Root (for concurrent scripts)
+# Install root concurrency tools
 npm install
 
-# Backend
-cd backend
-npm install
+# Install backend dependencies
+cd backend && npm install
 
-# Frontend
-cd ../frontend
-npm install
+# Install frontend dependencies
+cd ../frontend && npm install
 ```
 
-### 3. Configure Environment Variables
-
-Create a `.env` file in the **`backend/`** directory:
-
+### **3. Configure Environment Credentials**
+Establish a `.env` file inside your **`backend/`** subdirectory:
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
 GROQ_API_KEY=your_groq_api_key
+JWT_SECRET=super_secret_jwt_key_change_me
 ```
 
-### 4. Run the Application
-
-You can run both the backend and frontend simultaneously from the root directory:
-
+### **4. Launch the Platform**
+Run the client server and backend APIs concurrently with one command from the project root:
 ```bash
-# From the root directory
+# Execute from the GFG-ByteQuest-2026/ root directory
 npm run dev
 ```
 
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+* **Frontend Hub:** [http://localhost:5173](http://localhost:5173)
+* **Backend API Gateway:** [http://localhost:5000](http://localhost:5000)
 
 ---
+
+## 📁 Repository Organization
+
+```
+├── .gitignore                                      # Excludes node_modules, local .env keys, and build assets
+├── README.md                                       # Advanced GFG ByteQuest 2026 documentation
+├── Demo Video.mp4                                  # Full video demonstration of app usage and dashboard features
+├── The-Silent-Disease-Unveiling-Hidden-Health.pptx # Hackathon presentation pitch slides
+├── package.json                                    # Configures concurrently to boot client and server
+├── backend/                                        # Express REST APIs & Groq AI configuration
+└── frontend/                                       # Vite + React 18 + TS dashboard interface
+```
+
+---
+
+<br>
+<p align="center">
+  <i>Developed with precision for GeeksforGeeks ByteQuest 2026 🔬.</i>
+</p>

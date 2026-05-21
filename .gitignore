@@ -30,3 +30,8 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Antigravity/Agent planning artifacts
+.agent/
+.planning/
+.gemini/
